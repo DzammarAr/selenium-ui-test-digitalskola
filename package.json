@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "tests"
   },
   "scripts": {
-    "test": "mocha test/saucedemo-mocha.js",
-    "test:all": "mocha"
+    "test": "node tests/test.spec.js",
+    "test:chrome": "node tests/test.spec.js chrome",
+    "test:firefox": "node tests/test.spec.js firefox"
+    
   },
   "keywords": [],
   "author": "",
@@ -20,5 +22,13 @@
   "devDependencies": {
     "mocha": "^11.1.0"
   },
-  "type": "commonjs"
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DzammarAr/selenium-ui-test-digitalskola.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DzammarAr/selenium-ui-test-digitalskola/issues"
+  },
+  "homepage": "https://github.com/DzammarAr/selenium-ui-test-digitalskola#readme"
 }
